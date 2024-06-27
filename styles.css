@@ -1,18 +1,36 @@
 body {
     margin: 0;
     box-sizing: border-box;
+    color: white;
+    font-family: 'outfit','Courier New', Courier, monospace;
 }
-p{
+p {
     margin: 0
+}
+
+a{
+    color:lightgreen ;
 }
 .sidebar{
     width: 100%;
-    border: 1px solid red;
     height: 100%;
+    position:relative
 }
 
+.sidebar-logo-wrapper{
+    position:absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.731);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10rem;
+}   
+
 .outer-section{
-    border: 1px solid purple;
+    
     height: calc(100vh - 5px);
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
@@ -23,8 +41,7 @@ font-size: 3rem;
 }
 .content-wrapper{
     display: flex;
-    border: 1px solid blue;
-    
+    height: 100%;
 }
 
 .container {
@@ -34,30 +51,38 @@ font-size: 3rem;
     width: 100%;
     margin: 0 auto;
     padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    background-color: rgba(10, 7, 46, 0.918);
 }
 
 .form-wrapper{
+    align-items: center;
     display: flex;
     width: 100%;
     flex-direction: column;
     border-radius: 1em;
-    padding: 1.5rem;
-    max-width: 600px;
-     -webkit-box-shadow: 2px 6px 5px 1px rgba(0,0,0,0.32);
-    -moz-box-shadow: 2px 6px 5px 1px rgba(0,0,0,0.32);
-    box-shadow: 2px 6px 5px 1px rgba(0,0,0,0.32);
+    padding: 1rem;
+    max-width: 500px;
+    -webkit-box-shadow: 2px 6px 5px 1px rgba(55, 55, 55, 0.662);;
+    -moz-box-shadow: 2px 6px 5px 1px rgba(55, 55, 55, 0.662);
+    box-shadow: 2px 6px 5px 1px rgba(55, 55, 55, 0.662);
+    background-color: white;
+    color: rgb(35, 39, 43);
 }
 
 .form-section{
     display: flex;
     flex-direction: column;
-   
 }
 
 .form-outer-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
     
 }
 
@@ -69,11 +94,14 @@ font-size: 3rem;
 }
 
 .submit-btn{
-    margin-top: 1rem;
-    padding: .75em 1em;
+    margin-top: 1.5rem;
+    padding: 1em 1.5em;
+    font-size: 1.1rem;
     background-color: lightgreen;
-    color:white;
+    color:rgb(21, 15, 56);
     border-radius: 1em;
+    width: 100%;
+    align-self: center;
 }
 
 .features-list{
