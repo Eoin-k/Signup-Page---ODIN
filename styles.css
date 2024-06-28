@@ -30,7 +30,6 @@ a{
 }   
 
 .outer-section{
-    
     height: calc(100vh - 5px);
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
@@ -109,3 +108,29 @@ font-size: 3rem;
     flex-direction: row;
     gap: 2rem;
 }
+@media screen and (max-width: 762px) {
+    .outer-section{
+        height: calc(100vh - 5px);
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 
+    }
+    .container{
+        overflow: hidden;
+        text-align: center;
+    }
+    .features-list  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: start;
+    }
+  }
+  @media screen and (max-width: 480px){
+    .form-fields-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-outer-wrapper{
+        grid-template-columns: 1fr;
+    }
+  }
