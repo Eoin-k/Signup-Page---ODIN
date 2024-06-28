@@ -8,9 +8,14 @@ p {
     margin: 0
 }
 
-a{
+a {
     color:lightgreen ;
 }
+
+input:invalid {
+    border: red 1px solid
+}
+
 .sidebar{
     width: 100%;
     height: 100%;
